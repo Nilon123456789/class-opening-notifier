@@ -45,3 +45,8 @@ python schedule-checker.py
 ```
 
 The script will run continuously. To stop it, press `Ctrl+C` in the terminal.
+
+## Developers
+Made by [@Nilon123456789](https://github.com/nilon123456789)
+
+Improved by [@XaJason](https://github.com/xajason)

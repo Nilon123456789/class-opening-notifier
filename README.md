@@ -5,8 +5,10 @@ This script monitors the availability of specific classes at Polytechnique Montr
 ## Features
 
 - **Cross-Platform:** Works on Windows, macOS, and Linux.
-- **Audio Alerts:** Uses system text-to-speech to announce open classes.
+- **Audio Alerts:** Uses a provided WAV sound file (or system beeps) to notify you when classes open.
 - **Visual Alerts:** Displays a popup window on top of other applications.
+- **Browser Integration:** Optionally opens the Dossier Étudiant page when classes become available.
+- **Discord Notifications:** Sends alerts to a specified Discord channel via webhook. And mentions a specific user if desired.
 
 ## Prerequisites
 
@@ -27,6 +29,7 @@ This script monitors the availability of specific classes at Polytechnique Montr
 ## Configuration
 
 Open `schedule-checker.py` and modify the `WANTED_CLASSES` list to include the classes you want to monitor.
+Edit top-level constants (e.g., `CHECK_INTERVAL`, `CSV_URL`, `SOUND_FILE`, `DISCORD_WEBHOOK_URL`) directly in the file if you'd like to change behaviour.
 
 ```python
 # Format: ("Course Code", "Group", "Type")
@@ -47,6 +50,7 @@ python schedule-checker.py
 The script will run continuously. To stop it, press `Ctrl+C` in the terminal.
 
 ## Developers
+
 Made by [@Nilon123456789](https://github.com/nilon123456789)
 
 Improved by [@XaJason](https://github.com/xajason)
